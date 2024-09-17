@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container" style="margin-bottom: 00px;">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign Up</h2>
+                        <form method="POST" class="register-form" id="register-form" action="ecom.html">
+                            <div class="form-group">
+                                <label for="name"><i class="fa-solid fa-user"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="fa-solid fa-envelope"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email" />
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="fa-solid fa-lock"></i></label>
+                                <input type="password" name="pass" id="pass" placeholder="Password" />
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="fa-solid fa-lock"></i></label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" />
+                            </div>
+                            <div class="form-group form-button">
+                                <a href="index.html" onclick="validation()" class="form-submit">Register</a>
+                            </div>
+                            <a href="sign_in.html" class="signup-image-link">I am already member ? login</a>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="eco.png" alt="sing up image"></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---------------------------------------- js----------------------------------------- -->
+        <script type="text/javascript">
+            function validation() {
+                Email_id = document.getElementById("email").value;
+                at_position = Email_id.indexOf("@");
+                dot_position = Email_id.lastIndexOf(".");
+
+                const password = document.getElementById("pass").value;
+                const confirmPassword = document.getElementById("re_pass").value;
+                if ((at_position < 1) || ((dot_position - at_position) < 2)) {
+                    alert("Please enter correct email ID");
+                    event.preventDefault();
+                }
+                if (password !== confirmPassword) {
+                    alert("Passwords do not match!");
+                    event.preventDefault();
+                }
+            }
+
+        </script>
+</body>
+
+</html>

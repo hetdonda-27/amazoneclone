@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="signin_up.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <section class="sign-in">
+        <div class="container">
+            <div class="signin-content">
+                <div class="signin-image">
+                    <img src="shopping-e-commerce-flat-line-illustration-thin-design-website-purchasing-goods-via-internet-online-cart-products-57103985.jpg"
+                        alt="sing up image" width="420px" height="200px">
+                </div>
+
+                <div class="signin-form">
+                    <h2 class="form-title">Sign in</h2>
+
+                    <form method="POST" class="register-form" id="login-form" action="ecom.html">
+                        <div class="form-group">
+                            <label for="your_name"><i class="fa-solid fa-user"></i></label>
+                            <input type="text" name="your_name"  id="your_name" placeholder="Your Name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="your_pass"><i class="fa-solid fa-lock"></i></label>
+                            <input type="password" name="your_pass" id="your_pass" placeholder="Password" />
+                        </div>
+                        <div class="form-group">
+                            <label for="remember" style="font-size: 15px;">Remember me</label>
+                            <input type="checkbox" id="remember" style="transform: translatex(-16px) ;">
+                        </div>
+
+                        <a href="index.html" class="form-submit" onclick="name_validation()">login</a>
+  
+                    </form>
+                    <a href="sing_up.html" class="signup-image-link" style="transform: translatex(40px); ">Create an
+                        account</a>
+                    <span class="social-label style">Or login with</span>
+                    <ul class="socials">
+                        <a
+                            href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=Ab5oB3p07G3-9iofyauauIA55WwEIeXSyqgKjuNnfj6zLuhkFtqN6m70eYpMtIAk5M5vwPGTBhxjag&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1879184881%3A1724247067630413&ddm=0"><i
+                                id="g" class="fa-brands fa-google" height="40px"
+                                style="transform: translate(143px,-36px);color: rgb(213, 40, 75);"></i></a></li>
+                        <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"
+                                style="transform: translate(150px,-36px);color: #1877F2"></i></a></li>
+                        <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"
+                                style="transform: translate(156px,-36px);"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+</body>
+
+</html>
