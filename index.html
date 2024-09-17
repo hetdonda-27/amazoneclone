@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More -EpicBuy.in</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css.map">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+    <style>
+        .branding h1 {
+            font-size: 32px;
+            /* Larger font size for the brand name */
+            margin: 0;
+        }
+
+        .branding .tagline {
+            font-size: 13px;
+            margin: 0;
+        }
+    </style>
+    <header class="header">
+        <div class="container container-header">
+            <div class="branding">
+                <h1>EpicBuy</h1>
+                <p class="tagline">elevate your shopping journey</p>
+            </div>
+
+            <div class="address-container border-white">
+                <p class="hello">Hello</p>
+                <div class="icon-address">
+                    <i class="fa-solid fa-location-dot icon-location"></i>
+                    <select class="nav-links col-sm-3">
+                        <option value="state">Select state</option>
+                        <option value="andhra_pradesh">Andhra Pradesh</option>
+                        <option value="arunachal_pradesh">Arunachal Pradesh</option>
+                        <option value="assam">Assam</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="chhattisgarh">Chhattisgarh</option>
+                        <option value="goa">Goa</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="haryana">Haryana</option>
+                        <option value="himachal_pradesh">Himachal Pradesh</option>
+                        <option value="jharkhand">Jharkhand</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="madhya_pradesh">Madhya Pradesh</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="manipur">Manipur</option>
+                        <option value="meghalaya">Meghalaya</option>
+                        <option value="mizoram">Mizoram</option>
+                        <option value="nagaland">Nagaland</option>
+                        <option value="odisha">Odisha</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="rajasthan">Rajasthan</option>
+                        <option value="sikkim">Sikkim</option>
+                        <option value="tamil_nadu">Tamil Nadu</option>
+                        <option value="telangana">Telangana</option>
+                        <option value="tripura">Tripura</option>
+                        <option value="uttar_pradesh">Uttar Pradesh</option>
+                        <option value="uttarakhand">Uttarakhand</option>
+                        <option value="west_bengal">West Bengal</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="search-container">
+                <select class="search-select">
+                    <option>All</option>
+                    <option>Baby</option>
+                    <option>Beauty & Personal Care</option>
+                    <option>Books</option>
+                    <option>Collectibles</option>
+                    <option>Customer</option>
+                    <option>Cell Phones & Accessories</option>
+                    <option>Car & motorbike Cleaning</option>
+                    <option>Clothing, Shoes & Jewelry</option>
+                    <option>Women</option>
+                    <option>Men</option>
+                    <option>Software</option>
+                    <option>Pet supplies</option>
+                    <option>Electronics</option>
+                    <option>Deals</option>
+                    <option>jewellery</option>
+                    <option>Girls</option>
+                    <option>Boys</option>
+                    <option>Baby</option>
+                    <option>Collectibles & Fine Art</option>
+                    <option>Computers</option>
+                    <option>Credit and Payment Cards</option>
+                    <option>Digital Music</option>
+                    <option>Toys & games</option>
+                    <option>Garden & Outdoor</option>
+                    <option>Gift Cards</option>
+                    <option>Luxery Beauty</option>
+                    <option>Handmade</option>
+
+                </select>
+                <input type="text" class="search-input" />
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </div>
+
+            <div class="language-container border-white" style="padding-left: 20px;">
+                <p>English</p>
+                <i class="fa-solid fa-language"></i>
+            </div>
+
+            <div class="login-container border-white" style="padding-left: 30px;">
+                <p>Hello,<a style="color: white;text-decoration: none;" href="sign_in.html">sign in</a></p>
+                <p class="account"><a style="color: white;text-decoration: none;" href="account.html">Account & Lists</a></p>
+            </div>
+
+            <div class="return-order-container" style="padding-left: 25px;">
+                <p>Returns
+                <div class="order">& Orders</div>
+                </p>
+            </div>
+
+            <div class="cart-container border-white" style="margin-left: 60px;">
+                <style>
+                    #hv {
+                        padding: 12.5px 30px;
+                        border: 0;
+                        border-radius: 100px;
+                        background-color: #2ba8fb;
+                        color: #ffffff;
+                        font-weight: Bold;
+                        transition: all 0.5s;
+                        /* -webkit-transition: all 0.5s; */
+                    }
+
+                    #hv:hover {
+                        background-color: #6fc5ff;
+                        box-shadow: 0 0 20px #6fc5ff50;
+                        transform: scale(1.1);
+                    }
+                </style>
+                <button id="hv" style="margin-left: 10px;">Cart</button>
+            </div>
+        </div>
+    </header>
+
+    <!--navigation-->
+    <nav class="nav">
+        <div class="container container-nav">
+            <ul>
+                <li class="border-white" id="open-nav-sidebar">
+                    <span class="open-nav-slider">
+                        <i class="fa-solid fa-bars"></i>
+                        All
+                    </span>
+                </li>
+                <li class="border-white"><a href="try.html">Best Sellers</a></li>
+                <li class="border-white"><a href="todays'deal.html">Today's Deals</a></li>
+                <li class="border-white"><a href="mobiles.html">Mobiles</a></li>
+                <li class="border-white"><a href="electronic.html">Electronic</a></li>
+                <li class="border-white"><a href="fashion.html">Fashion</a></li>
+                <li class="border-white prime-image-hover">
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    </div>
+    <!--image slider -->
+    <section>
+        <div class="image-container">
+            <div class="image-list">
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/71cQMXCLSvL._SX3000_.jpg" />
+                </div>
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/71qlKqpJnlL._SX3000_.jpg" />
+                </div>
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg" />
+                </div>
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/61O72XhcEkL._SX3000_.jpg" />
+                </div>
+                <div class="image-item">
+                    <img src="https://m.media-amazon.com/images/I/61VuJdpjvaL._SX3000_.jpg" />
+                </div>
+                <div class="image-item">
+                    <img
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/devjyoti/GW/Uber/Nov/D103625178_DesktopTallHero_3000x1200_V3._CB558389732_.jpg" />
+                </div>
+            </div>
+
+            <div class="image-btn-container">
+
+                <button class="slider-btn" id="slide-btn-left" onclick="plusDivs(-1)"><i
+                        class="fa-solid fa-chevron-left"></i></button>
+                <button class="slider-btn" id="slide-btn-right" onclick="plusDivs(+1)"><i
+                        class="fa-solid fa-chevron-right"></i></i></button>
+            </div>
+        </div>
+    </section>
+
+
+    <!--product container card-->
+    <main class="main">
+        <div class="card-product-container container">
+            <div class="card-product">
+                <h2>Up to 60% off | Styles for Men</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-1-186-116._SY116_CB636110853_.jpg" />
+                        <p>clothing</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/QC_186_ALL_Customer_July_1._SY116_CB567470044_.jpg" />
+                        <p>Footwear</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-3-186-116._SY116_CB636110853_.jpg" />
+                        <p>Watches</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-4-186-116._SY116_CB636110853_.jpg" />
+                        <p>Bags & language</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+            <div class="card-product">
+                <h2>Redefine your living room</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" />
+                        <p>air conditioners</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg" />
+                        <p>Refrigerators</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg" />
+                        <p>Microwaves</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg" />
+                        <p>Washing machines</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">Visit our Electronic store</button>
+            </div>
+            <div class="card-product">
+                <h2>Revamp your home in style</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_1._SY116_CB606110532_.jpg" />
+                        <p>Home Products</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_5._SY116_CB606110532_.jpg" />
+                        <p>Furniture</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_3._SY116_CB606110532_.jpg" />
+                        <p>Daily essentials</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_8._SY116_CB606110532_.jpg" />
+                        <p>Fashion</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+            <div class="card-product">
+                <h2>Automotive essentials | Up to 60% off</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <a href="clean_ass.html" style="color: rgb(0, 0, 0);text-decoration: 0;">
+                            <img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare1X._SY116_CB410830553_.jpg" />
+                            <p>Cleaning accessories</p>
+                        </a>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare1x._SY116_CB410830552_.jpg" />
+                        <p>Tyre & rim care</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_186x116._SY116_CB405090404_.jpg" />
+                        <p>Helmets</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg" />
+                        <p>Vacuum cleaner</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+        </div>
+
+        <div class="card-product-container container productBackgraound">
+            <div class="card-product">
+                <h2>Starting ₹199 | Amazon Brands & more</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/QC_186_ALL_Customer_July_2._SY116_CB567469124_.jpg" />
+                        <p>Home & storage</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/QC_186_ALL_Customer_July_3._SY116_CB567469124_.jpg" />
+                        <p>Furniture & racks</p>
+                    </div>
+                    <div class="card-nested">
+                        <a href="toy.html">
+                            <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_186_Updated._SY116_CB567468621_.jpg" />
+                        </a>
+                        <p>Toys & games</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg" />
+                        <p>Lighting solutions</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+            <div class="card-product">
+                <h2>Up to 60% off | Styles for women</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF1-186-116._SY116_CB636048992_.jpg" />
+                        <p>Womens clothing</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF2-186-116._SY116_CB636048992_.jpg" />
+                        <p>Footware+handbags</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF4-186-116._SY116_CB636048992_.jpg" />
+                        <p>Watches</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF3-186-116._SY116_CB636048992_.jpg" />
+                        <p>Fashion&jewellery</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+            <div class="card-product">
+                <h2>Top rated, premium quality | Amazon Brands &</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_2._SY116_CB567468236_.jpg" />
+                        <p>Bedsheets</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_3._SY116_CB567468236_.jpg" />
+                        <p>Curtains</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_4._SY116_CB567468236_.jpg" />
+                        <p>Ironing board</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_1._SY116_CB567468236_.jpg" />
+                        <p>Home decore</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+            <div class="card-product">
+                <h2>Starting ₹149|headphones</h2>
+                <div class="card-product-nested-card">
+                    <div class="card-nested">
+                        <a href="boat.html" target="_blank">
+                            <img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_boAt_0.5x._SY116_CB553870684_.jpg" />
+                        </a>
+                        <p>Starting ₹229</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Boult_0.5x._SY116_CB553870684_.jpg" />
+                        <p>Starting ₹399</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Noise_0.5x._SY116_CB553870684_.jpg" />
+                        <p>Starting ₹649</p>
+                    </div>
+                    <div class="card-nested">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/MSO/PD3/PC_QuadCard_Zeb_0.5x_1._SY116_CB570220221_.jpg" />
+                        <p>Starting ₹529</p>
+                    </div>
+                </div>
+                <button class="card-product-btn">see more</button>
+            </div>
+        </div>
+        <div class="brands">
+            <div class="small-container">
+                <div class="row" style="display: flex; justify-content: space-around;">
+                    <div class="col-5">
+                        <a href="godrej.html" target="_blank">
+                            <img src="https://i.ibb.co/Gfwzz1S/logo-godrej.png" alt="" />
+                        </a>
+                    </div>
+                    <a href="oppo.html" target="_blank">
+                        <div class="col-5">
+                            <img src="https://i.ibb.co/vjrRZFM/logo-oppo.png" alt="" />
+                        </div>
+                    </a>
+                    <div class="col-5">
+                        <a href="samsung.html">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="120" height="40"
+                                viewBox="0 0 120 32" data-di-res-id="6ce4f5e9-15362982" data-di-rand="1725205256120"
+                                role="presentation" aria-hidden="true" tabindex="-1">
+                                <path id="Logo_ratio"
+                                    d="M0,11.651V10.511H3.994v1.45a1.334,1.334,0,0,0,1.494,1.346A1.3,1.3,0,0,0,6.932,12.3a1.833,1.833,0,0,0-.026-1.113C6.133,9.243.851,8.363.18,5.333a5.347,5.347,0,0,1-.025-2.02C.567.88,2.705,0,5.359,0c2.113,0,5.025.492,5.025,3.754V4.816H6.674V3.884A1.275,1.275,0,0,0,5.282,2.537a1.25,1.25,0,0,0-1.365,1.01,2.021,2.021,0,0,0,.026.777c.437,1.734,6.081,2.667,6.7,5.8a6.943,6.943,0,0,1,.025,2.46C10.307,15.068,8.091,16,5.412,16,2.6,16,0,14.99,0,11.651ZM48.392,11.6V10.46h3.943v1.424A1.312,1.312,0,0,0,53.8,13.23a1.286,1.286,0,0,0,1.443-.984,1.759,1.759,0,0,0-.025-1.088c-.748-1.915-5.979-2.8-6.648-5.825a5.215,5.215,0,0,1-.026-1.994C48.959.932,51.1.052,53.7.052c2.088,0,4.973.518,4.973,3.728V4.816H54.989V3.91a1.268,1.268,0,0,0-1.365-1.346,1.2,1.2,0,0,0-1.34.984,2.017,2.017,0,0,0,.025.777c.412,1.734,6,2.641,6.623,5.747a6.806,6.806,0,0,1,.025,2.434c-.361,2.486-2.551,3.392-5.2,3.392C50.97,15.9,48.392,14.887,48.392,11.6Zm14.121.545a5.876,5.876,0,0,1-.025-.985V.44H66.25V11.495a4.111,4.111,0,0,0,.025.57,1.468,1.468,0,0,0,2.835,0,3.97,3.97,0,0,0,.026-.57V.44H72.9V11.158c0,.285-.026.829-.026.985-.257,2.8-2.448,3.7-5.179,3.7S62.771,14.938,62.513,12.143Zm30.974-.156A7.808,7.808,0,0,1,93.435,11V4.712c0-.259.025-.725.051-.985C93.821.932,96.063.052,98.717.052c2.629,0,4.947.88,5.206,3.676a7.185,7.185,0,0,1,.025.985V5.2h-3.762V4.376a3.1,3.1,0,0,0-.051-.57,1.553,1.553,0,0,0-2.964,0,3.088,3.088,0,0,0-.051.7V11.34a4.17,4.17,0,0,0,.026.57A1.472,1.472,0,0,0,98.717,13a1.406,1.406,0,0,0,1.52-1.087,2.09,2.09,0,0,0,.026-.57V9.165h-1.52V6.99H104V11a7.674,7.674,0,0,1-.052.984c-.257,2.718-2.6,3.676-5.231,3.676S93.744,14.705,93.487,11.987ZM41.049,15.378l-.1-13.825L38.369,15.378H34.607L32.055,1.553l-.1,13.825H28.242L28.551.466h6.056l1.881,11.651L38.369.466h6.055l.335,14.912Zm-19.79,0L19.249,1.553,17.187,15.378H13.168L15.9.466h6.623l2.732,14.912Zm62.977-.155L80.5,2.822l.206,12.4H77.046V.466h5.514l3.5,12.013L85.859.466h3.685V15.224Z"
+                                    transform="translate(8 8)"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="col-5">
+                        <a href="asus.html">
+                            <img src="https://dlcdnimgs.asus.com/images/logo/logo-001.svg"
+                                style="height:22px;transform: translatey(28px); " alt="" />
+                        </a>
+                    </div>
+
+                    <a href="philip.html">
+                        <div class="col-5">
+                            <img src="https://i.ibb.co/GVSNwJD/logo-philips.png" alt="" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <p class="footer-title"><b>Get to Know Us</b></p>
+                    about us
+                    <br>Careers
+                    <br>Press Releases
+                    <br>EpicBuy Science
+                </div>
+                <div class="footer-section">
+                    <p class="footer-title"><b>Connect with Us</b></p>
+                    <br>Facebook
+                    <br>Twitter
+                    <br>Instagram
+                </div>
+                <div class="footer-section">
+                    <p class="footer-title"><b>Make Money with Us</b></p>
+                    <ul class="footer-list">
+                        <li>Sell on EpicBuy</li>
+                        <li>Sell under EpicBuy Accelerator</li>
+                        <li>Protect and Build Your Brand</li>
+                        <li>EpicBuy Global Selling</li>
+                        <li>Become an Affiliate</li>
+                        <li>Fulfillment by EpicBuy</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <p class="footer-title"><b>Let Us Help You</b></p>
+                    <ul class="footer-list">
+                        <li>COVID-19 and EpicBuy</li>
+                        <li>Your Account</li>
+                        <li>Returns Centre</li>
+                        <li>Recalls and Product Safety Alerts</li>
+                        <li>100% Purchase Protection</li>
+                        <li>EpicBuy App Download</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p class="copyright">
+                    Conditions of Use & Sale | Privacy Notice | Interest-Based Ads<br>
+                    © 1996-2024, EpicBuy.com, Inc. or its affiliates
+                </p>
+            </div>
+        </footer>
+    </main>
+    <script src="ecom.js"></script>
+    <script src="ecom1.js"></script>
+</body>
+
+</html>
